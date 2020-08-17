@@ -1,4 +1,4 @@
-package Appliance;
+package Task_7.appliance;
 
 public class ForCoocing extends ForKitchen {
     boolean electra;

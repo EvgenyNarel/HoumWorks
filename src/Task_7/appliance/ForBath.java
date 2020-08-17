@@ -1,4 +1,4 @@
-package Appliance;
+package Task_7.appliance;
 
 
     public class ForBath extends ForHoum {

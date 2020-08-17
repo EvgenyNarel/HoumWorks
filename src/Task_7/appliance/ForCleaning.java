@@ -1,4 +1,4 @@
-package Appliance;
+package Task_7.appliance;
 
     public class ForCleaning extends ForHoum {
         public ForCleaning(String name) {
