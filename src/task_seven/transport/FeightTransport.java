@@ -1,4 +1,4 @@
-package Task_7.transport;
+package task_seven.transport;
 
 /*
 В классе Грузовой добавляется  поле:
@@ -13,9 +13,10 @@ package Task_7.transport;
 public class FeightTransport extends LandTransport {
     int carryingCapacity;
 
-    FeightTransport(int c) {
+    FeightTransport(double power, int maximumSpeed, int weight, String brand,int numberWheels,int fuelConsumption,int carryingCapacity) {
+        super(power,maximumSpeed,weight,brand,numberWheels,fuelConsumption);
 
-        this.carryingCapacity = c;
+        this.carryingCapacity = carryingCapacity;
     }
 
     public void specifications(int carryingCapacity, double power) {

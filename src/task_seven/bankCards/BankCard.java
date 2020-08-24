@@ -1,10 +1,10 @@
-package Task_7.bankCards;
+package task_seven.bankCards;
 
 public abstract class BankCard {
     int number;
     int expirationDate;
     String name;
-    double summa;
+    double balance;
 
     void registration(int number, int expirationDate, String name){
         this.number=number;
@@ -17,25 +17,25 @@ public abstract class BankCard {
     abstract double pay(double value);
 
     double withdrawal(double value) {
-        this.summa-=value;
+        this.balance-=value;
         System.out.println("С вашей карты снято: " + value);
-        System.out.println("Остаток на карте " +name+" равен: " + summa);
-        return summa;
+        System.out.println("Остаток на карте " +name+" равен: " + balance);
+        return balance;
     }
         double transfer(BankCard bankCard, double value) {
-        this.summa-=value;
+        this.balance-=value;
         bankCard.add(value);
         System.out.println("Cумма перевода ровна: " + value);
-        return summa;
+        return balance;
     }
 
     double add(double transfer) {
-        this.summa+=transfer;
-        return summa;
+        this.balance+=transfer;
+        return balance;
     }
-    public void ostatok() {
+    public void balance() {
 
-        System.out.println("Остаток на карте " +name+" равен: " + summa);
+        System.out.println("Остаток на карте " +name+" равен: " + balance);
     }
 
 

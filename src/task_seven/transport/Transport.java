@@ -1,4 +1,4 @@
-package Task_7.transport;
+package task_seven.transport;
 
 /*
 В классе Транспорт есть поля:
@@ -11,6 +11,12 @@ public abstract class Transport {
     int weight;                              // (kg)
     String brand ;
 
+    public Transport(double power, int maximumSpeed, int weight, String brand){
+        this.power=power;
+        this.maximumSpeed=maximumSpeed;
+        this.weight=weight;
+        this.brand=brand;
+    }
 
 
     public double powerkW(double power) {

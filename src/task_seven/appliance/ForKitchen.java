@@ -1,10 +1,15 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
 public abstract class ForKitchen extends Appliance {
-    boolean electra;
+
     public ForKitchen(String name, boolean electra) {
         super(name, electra);
     }
+
+    public ForKitchen(String name){
+        super(name);
+    }
+
 
     @Override
     public void turnON() {
@@ -28,21 +33,17 @@ public abstract class ForKitchen extends Appliance {
         }
     }
 
-    public ForKitchen(String name){
-        super(name);
-    }
-
-    public int warmUp(int a) {
-        return a;
-    }
-
-    public void unfreeze() {
-    }
-
-    public void bake() {
+    protected void warmUp() {
 
     }
-    public void wash(){
+
+    protected void unfreeze() {
+    }
+
+    protected void bake() {
+
+    }
+    protected void wash(){
 
     }
 

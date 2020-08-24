@@ -1,4 +1,4 @@
-package Task_7.transport;
+package task_seven.transport;
 
 /*
 В классе Легковой добавляются поля:
@@ -27,16 +27,14 @@ public class LightTransport extends LandTransport {
     String bodyType;
     int numberOfPassengers;
 
-    LightTransport(String body, int number, double power){
+    LightTransport(double power, int maximumSpeed, int weight, String brand,int numberWheels,int fuelConsumption,String body, int numberOfPassengers){
+        super(power,maximumSpeed,weight,brand,numberWheels,fuelConsumption);
                 this.bodyType=body;
-        this.numberOfPassengers=number;
+        this.numberOfPassengers=numberOfPassengers;
         powerkW(power);
     }
 
-    public LightTransport(int maximumSpeed, int weight, String brand) {
 
-
-    }
 
 
     public void specifications() {

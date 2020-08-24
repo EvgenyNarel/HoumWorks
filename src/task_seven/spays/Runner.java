@@ -1,4 +1,4 @@
-package Task_7.spays;
+package task_seven.spays;
 
 public class Runner {
     public static void main(String[] args) throws InterruptedException {

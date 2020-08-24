@@ -1,7 +1,7 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
 
-    public class ForBath extends ForHoum {
+    public class ForBath extends ForHome {
 
         public ForBath(String name) {
             super(name);

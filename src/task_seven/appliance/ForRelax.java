@@ -1,6 +1,6 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
-public class ForRelax extends ForHoum {
+public class ForRelax extends ForHome {
 
     public ForRelax(String name) {
         super(name);

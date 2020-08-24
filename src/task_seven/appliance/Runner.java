@@ -1,4 +1,4 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
 /*
 Создать иерархию классов, описывающих бытовую технику. Создать несколько
@@ -15,9 +15,10 @@ public class Runner {
 //        ForBath washer = new ForBath("washer");
 //        Supporting b = new Supporting("multicooker",false);
 //        b.turnOFF();
+//        b.warmUp();
 //        ForCleaning s =new ForCleaning("пылесос");
 //        s.turnON();
-        ForCoocing a=new ForCoocing("Плита",false);
-        a.turnON();
+//        ForCoocing a=new ForCoocing("Плита",false);
+//        a.turnON();
     }
 }

@@ -1,4 +1,4 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
 public abstract class Appliance {
     String name;
@@ -14,12 +14,12 @@ public abstract class Appliance {
         this.electra = electra;
     }
 
-    public void turnON() {
+    protected   void turnON() {
         System.out.println(name + " вкл. в розетку");
         tornOn = true;
     }
 
-    public void turnOFF() {
+    protected void turnOFF() {
         if (tornOn == true) {
             System.out.println(name + " выкл. из розетки");
         } else{

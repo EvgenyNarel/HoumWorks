@@ -1,8 +1,8 @@
-package Task_7.bankCards;
+package task_seven.bankCards;
 
 public class RunnerBank {
     public static void main(String[] args) {
-     CardsCashBack card=new CardsCashBack(3);
+     CardCashBack card=new CardCashBack(3);
      card.registration(22222,2020,"Alfa");
      card.takeLoan(5000);
 
@@ -12,9 +12,9 @@ public class RunnerBank {
      salaryCards.registration(1111,2020,"BPS");
      salaryCards.add(3000);
      salaryCards.transfer(card,100);
-     salaryCards.ostatok();
+     salaryCards.balance();
 
-     card.ostatok();
+     card.balance();
 
 
     }

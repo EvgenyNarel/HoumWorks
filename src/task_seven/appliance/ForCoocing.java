@@ -1,7 +1,7 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
 public class ForCoocing extends ForKitchen {
-    boolean electra;
+
     public ForCoocing(String name, boolean electra) {
         super(name, electra);
     }

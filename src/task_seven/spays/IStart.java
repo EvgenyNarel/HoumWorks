@@ -1,4 +1,4 @@
-package Task_7.spays;
+package task_seven.spays;
 
 public interface IStart {
     boolean prelaunchCheck();

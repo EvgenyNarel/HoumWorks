@@ -4,8 +4,8 @@ public abstract class DebitCard extends BankCard {
 
 
 
-    public DebitCard(double summa) {
-        this.balance = summa;
+    public DebitCard(double balanc) {
+        this.balance =balanc;
     }
 
     @Override
@@ -16,5 +16,4 @@ public abstract class DebitCard extends BankCard {
 
 
 }
-
 

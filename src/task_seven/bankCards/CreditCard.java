@@ -1,6 +1,6 @@
-package Task_7.bankCards;
+package task_seven.bankCards;
 
-public class CreditCards extends BankCard {
+public class CreditCard extends BankCard {
 
     @Override
     double pay(double price) {
@@ -14,8 +14,8 @@ public class CreditCards extends BankCard {
     }
 
     public void repailoan(double value) { //погасить кредит
-        summa-=value;
-        double sumRepailoan = summa;
+        balance-=value;
+        double sumRepailoan = balance;
         System.out.println("Вы внесли " + value + " оплату по кредиту, остаток по кредиту: " + sumRepailoan);
     }
 

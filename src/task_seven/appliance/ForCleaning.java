@@ -1,6 +1,6 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
-    public class ForCleaning extends ForHoum {
+    public class ForCleaning extends ForHome {
         public ForCleaning(String name) {
             super(name);
         }

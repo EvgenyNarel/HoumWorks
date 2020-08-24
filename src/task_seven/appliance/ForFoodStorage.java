@@ -1,4 +1,4 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
 public class ForFoodStorage extends ForKitchen {
 

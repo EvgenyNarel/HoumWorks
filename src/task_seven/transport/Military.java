@@ -1,4 +1,4 @@
-package Task_7.transport;
+package task_seven.transport;
 
 /*
 В классе Военный  добавляются поля:
@@ -13,8 +13,8 @@ public class Military extends AirTransport {
     int missiles;
     boolean ejection;
 
-    public Military(int maximumSpeed, int weight, String brand, int wingspan, int minimumRunway, int missiles, boolean ejection) {
-        super(maximumSpeed, weight, brand, wingspan, minimumRunway);
+    public Military(double power,int maximumSpeed, int weight, String brand, int wingspan, int minimumRunway, int missiles, boolean ejection) {
+        super(power,maximumSpeed, weight, brand, wingspan, minimumRunway);
         this.missiles = missiles;
         this.ejection = ejection;
     }

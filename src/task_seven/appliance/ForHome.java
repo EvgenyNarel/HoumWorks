@@ -1,15 +1,11 @@
-package Task_7.appliance;
+package task_seven.appliance;
 
-public abstract class ForHoum extends Appliance {
+public abstract class ForHome extends Appliance {
 
-    public ForHoum(String name) {
+    public ForHome(String name) {
         super(name);
     }
 
-
-
-    public void muve() {
-    }
 
     public void cleanUp() {
     }

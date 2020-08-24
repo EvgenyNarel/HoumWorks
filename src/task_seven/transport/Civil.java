@@ -1,4 +1,4 @@
-package Task_7.transport;
+package task_seven.transport;
 
 /*
 В классе Гражданский добавляются поля:
@@ -11,8 +11,8 @@ public class Civil extends AirTransport {
     int passengers;
     boolean businessClass;
 
-    public Civil(int maximumSpeed, int weight, String brand, int wingspan, int minimumRunway) {
-        super(maximumSpeed, weight, brand, wingspan, minimumRunway);
+    public Civil(double power,int maximumSpeed, int weight, String brand, int wingspan, int minimumRunway) {
+        super(power,maximumSpeed, weight, brand, wingspan, minimumRunway);
     }
 
 
