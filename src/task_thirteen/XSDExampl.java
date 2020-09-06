@@ -10,9 +10,9 @@ import javax.xml.validation.Validator;
 import java.io.File;
 import java.io.IOException;
 
-public class XSDExample {
+public class XSDExampl {
     public static void main(String[] args) {
-        boolean answer = validateXMLSchema("D:\\HoumWorks\\src\\task_thirteen\\device.xsd", "D:\\HoumWorks\\src\\task_thirteen\\devices.xml");
+        boolean answer = validateXMLSchema("D:\\HoumWorks\\src\\task_thirteen\\Device.xsd", "D:\\HoumWorks\\src\\task_thirteen\\Devices.xml");
         System.out.println("Result:" + answer);
     }
 
@@ -29,3 +29,4 @@ public class XSDExample {
         return true;
     }
 }
+

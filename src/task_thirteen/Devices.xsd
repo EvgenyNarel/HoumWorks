@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://narel.com.task15/devices"
-           xmlns:tns="http://narel.com.task15/devices"
+           targetNamespace="http://narel.com.task13/Devices"
+           xmlns:tns="http://narel.com.task13/Devices"
 
            elementFormDefault="qualified"
            attributeFormDefault="unqualified">

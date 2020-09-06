@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Devices  xmlns="http://narel.com.task15/devices"
-                  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
-                  xs:schemaLocation="http://narel.com.task15/devices device.xsd">
+          xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+          xs:schemaLocation="http://narel.com.task13/devices Device.xsd">
     <Device id="1">
         <Name>HP GP70N F2B56AA</Name>
         <Origin>China</Origin>
