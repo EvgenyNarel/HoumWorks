@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Devices  xmlns="http://narel.com.task15/devices"
+                  xmlns:xs="http://www.w3.org/2001/XMLSchema-instance"
+                  xs:schemaLocation="http://narel.com.task15/devices device.xsd">
+    <Device id="1">
+        <Name>HP GP70N F2B56AA</Name>
+        <Origin>China</Origin>
+        <Price>20</Price>
+        <ComponentsGroup>input_output</ComponentsGroup>
+        <Type>optical drive</Type>
+        <Options>
+            <Peripherals>false</Peripherals>
+            <EnergyConsumption>5</EnergyConsumption>
+            <PresenceCooler>false</PresenceCooler>
+            <Ports>USB</Ports>
+        </Options>
+        <Critical>false</Critical>
+    </Device>
+
+    <Device id="2">
+        <Name>GeForce GT 710</Name>
+        <Origin>China</Origin>
+        <Price>45</Price>
+        <ComponentsGroup>multimedia</ComponentsGroup>
+        <Type>graphic card</Type>
+        <Options>
+            <Peripherals>false</Peripherals>
+            <EnergyConsumption>50</EnergyConsumption>
+            <PresenceCooler>true</PresenceCooler>
+            <Ports>LPT</Ports>
+        </Options>
+        <Critical>true</Critical>
+    </Device>
+
+    <Device id="3">
+        <Name>Redragon Brahma</Name>
+        <Origin>USA</Origin>
+        <Price>70</Price>
+        <ComponentsGroup>input_output</ComponentsGroup>
+        <Type>keyboard</Type>
+        <Options>
+            <Peripherals>true</Peripherals>
+            <EnergyConsumption>20</EnergyConsumption>
+            <PresenceCooler>false</PresenceCooler>
+            <Ports>USB</Ports>
+        </Options>
+        <Critical>false</Critical>
+    </Device>
+</Devices>

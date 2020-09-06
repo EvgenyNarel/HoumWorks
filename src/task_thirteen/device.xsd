@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://narel.com.task15/devices"
+           xmlns:tns="http://narel.com.task15/devices"
+
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+    <xs:element name="Devices">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Device" type="tns:Device" minOccurs="1" maxOccurs="unbounded">
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="Device">
+        <xs:sequence>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Origin" type="xs:string"/>
+            <xs:element name="Price">
+                <xs:simpleType>
+                    <xs:restriction base="xs:double">
+                        <xs:minInclusive value="0"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="ComponentsGroup" type="tns:ComponentsGroup"/>
+            <xs:element name="Type" type="tns:Type"/>
+            <xs:element name="Options">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="Peripherals" type="xs:boolean" nillable="false"/>
+                        <xs:element name="EnergyConsumption">
+                            <xs:simpleType>
+                                <xs:restriction base="xs:int">
+                                    <xs:pattern value="[0-9]{1,4}"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="PresenceCooler" type="xs:boolean" nillable="false"/>
+                        <xs:element name="Ports" type="tns:Port"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Critical" type="xs:boolean"/>
+        </xs:sequence>
+        <xs:attribute  name="id" use="optional" >
+            <xs:simpleType>
+                <xs:restriction base="xs:int">
+                    <xs:pattern value="[0-9]{1,10}"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+
+    <xs:simpleType name="ComponentsGroup">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="input_output"/>
+            <xs:enumeration value="multimedia"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Type">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="optical drive"/>
+            <xs:enumeration value="graphic card"/>
+            <xs:enumeration value="keyboard"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Port">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="COM"/>
+            <xs:enumeration value="USB"/>
+            <xs:enumeration value="LPT"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>
